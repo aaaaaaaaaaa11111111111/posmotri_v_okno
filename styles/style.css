@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -42,7 +42,6 @@ ol {
   align-items: center;
   align-content: center;
   justify-content: center;
-  /*padding: 133px 30px;*/
 }
 
 .content {
@@ -139,12 +138,13 @@ ol {
 .search-form__pseudo-checkbox {
   border: 1px solid #fff;
   width: 19px;
-  height: 19px; 
+  height: 19px;
   background-color: transparent;
   margin-right: 5px;
 }
 
-.search-form__checkbox[type='checkbox']:checked + .search-form__pseudo-checkbox {
+.search-form__checkbox[type="checkbox"]:checked
+  + .search-form__pseudo-checkbox {
   background-color: #fff;
   inline-size: 15px;
   block-size: 15px;
@@ -181,7 +181,7 @@ ol {
 }
 
 .button:active {
-  background-color: #545050;;
+  background-color: #545050;
 }
 
 .button:focus-visible {
@@ -191,7 +191,7 @@ ol {
 
 .search-form__submit-button {
   inline-size: 194px;
-  block-size:  34px;
+  block-size: 34px;
 }
 
 .more-button {
@@ -226,10 +226,6 @@ ol {
   overflow: hidden scroll;
   position: relative;
   padding: 2px;
-}
-
-.preloader {
-  position: absolute;
 }
 
 .content__list-item {
@@ -274,7 +270,7 @@ ol {
 
 .content__video-card-description-container {
   inline-size: 100%;
-  max-inline-size: 200PX;
+  max-inline-size: 200px;
   overflow: hidden;
 }
 
