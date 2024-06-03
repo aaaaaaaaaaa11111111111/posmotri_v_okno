@@ -40,7 +40,6 @@ ol {
 .page {
   display: flex;
   align-items: center;
-  align-content: center;
   justify-content: center;
 }
 
@@ -83,8 +82,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Oswald, sans-serif;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   padding-bottom: 5px;
@@ -100,12 +98,16 @@ ol {
   outline: none;
 }
 
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__textfield {
   min-inline-size: 225px;
   block-size: 27px;
   background-color: transparent;
   font-family: inherit;
-  font-weight: 400;
   font-size: 18px;
   border-left: none;
   border-right: none;
@@ -117,11 +119,6 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
 }
 
 .search-form__textfield:active {
@@ -137,8 +134,8 @@ ol {
 
 .search-form__pseudo-checkbox {
   border: 1px solid #fff;
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   background-color: transparent;
   margin-right: 5px;
 }
@@ -205,7 +202,6 @@ ol {
 }
 
 .title {
-  font-family: Fira Sans Condensed, sans-serif;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
